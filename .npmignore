@@ -1,0 +1,5 @@
+.vim/
+src/
+node_modules/
+tsconfig.json
+.editorconfig

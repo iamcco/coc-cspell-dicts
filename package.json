@@ -1,0 +1,103 @@
+{
+  "name": "coc-cspell-dicts",
+  "description": "Ext spell dictionary extension for coc-spell-checker",
+  "version": "1.0.0",
+  "publisher": "iamcco",
+  "engines": {
+    "coc": "^0.0.74"
+  },
+  "keywords": [
+    "coc.nvim",
+    "dicts",
+    "Spelling Checker",
+    "dictionary",
+    "spelling"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/index.js",
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "cSpell ext dicts configuration",
+      "properties": {
+        "cSpellExt.enableDictionaries": {
+          "type": "array",
+          "default": [
+            "catalan",
+            "medical-terms"
+          ],
+          "items": {
+            "type": "string",
+            "items": [
+              "catalan",
+              "czech",
+              "danish",
+              "dutch",
+              "french",
+              "french-reforme",
+              "german",
+              "greek",
+              "italian",
+              "medical-terms",
+              "persian",
+              "polish",
+              "portuguese",
+              "portuguese-brazilian",
+              "russian",
+              "spanish",
+              "swedish",
+              "turkish",
+              "ukrainian"
+            ]
+          },
+          "description": "Enable ext dicts"
+        }
+      }
+    }
+  },
+  "extensionDependencies": [
+    "coc-spell-checker"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamcco/coc-cspell-dicts"
+  },
+  "bugs": {
+    "url": "https://github.com/iamcco/coc-cspell-dicts"
+  },
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf ./out",
+    "build": "tsc -p ./",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "dependencies": {
+    "cspell-dict-ca": "^1.0.9",
+    "cspell-dict-cs-cz": "^1.0.9",
+    "cspell-dict-da-dk": "^1.0.16",
+    "cspell-dict-de-de": "^1.1.16",
+    "cspell-dict-el": "^1.0.4",
+    "cspell-dict-es-es": "^1.0.14",
+    "cspell-dict-fa-ir": "^1.0.4",
+    "cspell-dict-fr-fr": "^1.2.7",
+    "cspell-dict-fr-reforme": "^1.0.2",
+    "cspell-dict-it-it": "^1.0.1",
+    "cspell-dict-medicalterms": "^1.0.14",
+    "cspell-dict-nl-nl": "^1.0.19",
+    "cspell-dict-pl_pl": "^1.0.15",
+    "cspell-dict-pt-br": "^1.0.11",
+    "cspell-dict-pt-pt": "^1.0.11",
+    "cspell-dict-ru_ru": "^1.1.12",
+    "cspell-dict-russian": "^1.1.13",
+    "cspell-dict-sv": "^1.0.12",
+    "cspell-dict-tr-tr": "^1.0.6",
+    "cspell-dict-uk-ua": "^1.0.9"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.2",
+    "coc.nvim": "^0.0.74",
+    "vscode-languageserver-protocol": "^3.14.1"
+  }
+}

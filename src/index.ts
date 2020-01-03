@@ -93,11 +93,10 @@ export function activate(context: coc.ExtensionContext) {
     .getConfiguration("cSpellExt")
     .get<string[]>("enableDictionaries", []);
 
-  const extension = coc.extensions.getExtension(cocSpellCheckerExtension)
-    .extension;
+  const cocSpellChecker = coc.extensions.getExtension(cocSpellCheckerExtension)
 
-  if (extension) {
-    extension.activate().then(ext => {
+  if (cocSpellChecker) {
+    cocSpellChecker.extension.activate().then(ext => {
       if (enableDictionaries && enableDictionaries.length) {
         enableDictionaries.forEach(lang => {
           const dict = dicts[lang]
@@ -137,6 +136,8 @@ export function activate(context: coc.ExtensionContext) {
         });
       }
     });
+  } else {
+    coc.workspace.showMessage(`[coc-cspell-dicts]: require ${cocSpellCheckerExtension} extensions installed`)
   }
 }
 

@@ -8,7 +8,7 @@ Dictionaries:
 
 - catalan `ca`
 - czech `cs`
-- danish `dk`
+- danish `da`
 - dutch `nl`
 - french `fr`
 - french-reforme `fr-90`

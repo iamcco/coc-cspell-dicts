@@ -1,7 +1,7 @@
 {
   "name": "coc-cspell-dicts",
   "description": "Ext spell dictionary extension for coc-spell-checker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "iamcco",
   "engines": {
     "coc": "^0.0.74"

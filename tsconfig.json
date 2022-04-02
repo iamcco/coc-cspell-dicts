@@ -1,15 +1,13 @@
 {
   "compilerOptions": {
     "target": "es2015",
-    "lib": [
-      "es2015",
-      "esnext"
-    ],
+    "lib": ["es2015", "esnext"],
     "module": "commonjs",
     "declaration": false,
     "sourceMap": false,
     "outDir": "out",
     "strict": true,
+    "strictFunctionTypes": false,
     "moduleResolution": "node",
     "noImplicitAny": false,
     "esModuleInterop": true

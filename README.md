@@ -15,6 +15,7 @@ Dictionaries:
 - german `de`
 - greek `el`
 - italian `it`
+- norwegian `nb, nb-no`
 - persian `fa`
 - polish `pl`
 - portuguese `pt,pt_PT`
